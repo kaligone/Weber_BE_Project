@@ -1,0 +1,179 @@
+body{
+  position: absolute;
+  width: 1016px;
+  height: 560px;
+  background: #D9D9D9;
+  mix-blend-mode: multiply;
+}
+
+.appName{
+  position: absolute;
+  width: 146px;
+  height: 56px;
+
+  padding-left: 20px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 0px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tm{
+position: absolute;
+width: 9px;
+height: 16px;
+
+padding-left:11em;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 40px;
+/* identical to box height */
+
+color: #000000;
+}
+
+.backLogo{
+position: absolute;
+width: 550px;
+height: 550px;
+
+opacity: 0.1;
+/*padding*/
+padding: 90px 480px;
+}
+
+/* Footer  */
+.foot{
+position: absolute;
+width: 1520px;
+height: 150px;
+bottom: -180px;
+
+background: #377639;
+}
+
+
+/* Footer bavigation bar */
+.nav{
+  position: absolute;
+  width: 600px;
+  height: 15px;
+  padding: 20px 30px;
+  color: #F5F5F5;
+}
+
+.nav a{
+    font-family: 'Inter';
+    font-style: Light;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 15px;
+    color: #F5F5F5;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.nav a:hover{
+  cursor: pointer;
+  color: yellow;
+  font-size: 21px;
+  transition: all .5s;
+  transform:scale(5);
+}
+
+/*rights option*/
+.rights{
+  position: absolute;
+  height: 17px;
+  width:700px;
+  font-family:'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: #F5F5F5;
+  bottom: 20px;
+  left: 500px;
+}
+
+.rights a{
+  font-family: 'Inter';
+  font-style: Light;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 15px;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+.rights a:hover{
+  cursor: pointer;
+  color: yellow;
+}
+
+
+/* .welcome{
+  position: absolute;
+  width: 394px;
+  height: 385px;
+  opacity: 0.1;
+} */
+
+.welcome-head{
+  position: absolute;
+}
+
+.welcome-head-1, .welcome-head-2{
+  display: inline;
+}
+
+.welcome-head-1{
+  position: absolute;
+  width: 200px;
+  top: 6em;
+  left: 13em;
+  font-family: 'Cutive Mono';
+  font-size: 40px;
+  color: #000000;
+  text-decoration-line: underline;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-head-2{
+position: absolute;
+width: 146px;
+height: 56px;
+top: 5.9em;
+left: 18em;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 58px;
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-head-tm{
+position: absolute;
+width: 9px;
+height: 16px;
+top: 20em;
+left: 63.5em;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 40px;
+/* identical to box height */
+
+color: #000000;
+}
