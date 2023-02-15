@@ -1,0 +1,200 @@
+body{
+    background: #C2BECD;
+}
+
+.login-box{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 492px;
+  height: 400px;
+  left: 530px;
+  top: 130px;
+
+  background: #FFFFFF;
+  /* border: 1px solid #000000; */
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-box-header{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 492px;
+  height: 58px;
+
+  background: #D9D9D9;
+  /* border: 1px solid #000000; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.login-box-header img{
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.login-box-header-name{
+  position: absolute;
+  width: 92px;
+  height: 43px;
+  margin-top: 0.25em;
+  margin-left: 1.6em;
+  font-family: 'Itim';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+.login-box-header-content-1
+{
+  /* WEB APPLICATION */
+  position: absolute;
+  margin-top: 1.5em;
+  margin-left: 17em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #000000;
+
+  opacity: 0.6;
+}
+
+.login-box-header-content-2
+{
+  /* SCANNER */
+  position: absolute;
+  margin-top: 1.5em;
+  margin-left: 26.2em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.login-box-signin
+{
+  /* position: absolute; */
+  text-align:center;
+  margin-top: 5rem;
+  font-family: 'IBM Plex Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.login-cred-em{
+  position: absolute;
+  margin-top: 0;
+  margin-left: 4.5em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #000000;
+  opacity: 0.7;
+}
+
+.login-cred-em-in
+{
+  position: absolute;
+  width: 24em;
+  height: 2em;
+  margin-top: 2em;
+  margin-left: 6.5em;
+  color: #000000;
+  font-family: 'Inter';
+  font-style: normal;
+  border:none;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-cred-pass{
+  position: absolute;
+  margin-top: 4em;
+  margin-left: 4.5em;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #000000;
+  opacity: 0.7;
+}
+
+.login-cred-pass-in
+{
+  position: absolute;
+  width: 24em;
+  height: 2em;
+  margin-top: 7.7em;
+  margin-left: 6.5em;
+  color: #000000;
+  font-family: 'Inter';
+  font-style: normal;
+  border:none;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-but input{
+  position: absolute;
+  top: 17.5em;
+  margin-left: 11em;
+  background-color: #305235;
+  border: none;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #ffffff;
+  width: 6em;
+  height: 2em;
+  border-radius: 2em;
+}
+
+.login-but input:hover{
+  cursor: pointer;
+}
+.copyrights{
+  position: absolute;
+  font-family: 'Inter';
+  margin-top: 13.5em;
+  margin-left: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+  opacity: 0.75;
+}

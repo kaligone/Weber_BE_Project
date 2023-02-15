@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weber - Login</title>
+    <link rel="stylesheet" href="../static/css/loginStyle.css">
+    <link rel = "icon" href ="../static/W3.png" type = "image/x-icon">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="login-box-header">
+        <img src="../static/W3.png" alt="">
+        <p class="login-box-header-name">weber</p>
+        <p class="login-box-header-content-1">WEB APPLICATION</p>
+        <p class="login-box-header-content-2">SCANNER</p>
+        <p class="login-box-signin">Sign In</p>
+       
+        <form action="{{url_for('validate')}}" method="POST">
+          <div class="login-cred">
+            <label for="email" class="login-cred-em">Email</label>
+            <input class="login-cred-em-in" id="email" type="text" name="email" value="">
+
+            <label for="pass" class="login-cred-pass">Password</label>
+            <input class="login-cred-pass-in" id="pass" type="password" name="password" value="">
+          </div>
+        <div class="login-but">
+            <input type="submit" name="signin" value="Login">
+        </div>
+      </form>
+        <p class="copyrights">Copyrights @2023 weber</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for category,message in messages %}
+        <script>
+          swal("{{category}}", "{{message}}", "error");
+        </script>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  
+  </body>
+</html>
