@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weber - Resources</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/resourcestyle.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel = "icon" href ="{{url_for('static', filename='w3.png')}}" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+</head>
+<body>
+    <div class="header">
+        <div class="logo-content">
+          <i><img src="{{url_for('static', filename='w3.png')}}" alt="weber"></i>
+          <div class="logo">
+            <div class="logo_name">weber</div>
+          </div>
+        </div>
+  
+        <div class="dropdown">
+          <nav class="link">
+            <li>
+              <i class='bx bxs-user' ></i>
+              <span>{{user}}</span>
+            </li>
+            
+            <li>
+              <a href="{{url_for('logout')}}">
+                <i class='bx bx-log-out'></i>
+                <span>Log out</span>
+              </a>
+            </li>
+          </nav>
+        </div>
+  
+      </div>
+  
+  
+      <div class="sidebar close">
+        <i class='bx bx-menu' id="btn"></i>
+        <ul class="nav-links">
+          <!-- dashboard -->
+          <li>
+            <a href="/Weber/login/dashboard">
+              <i class='bx bxs-dashboard' ></i>
+              <span class="links_name">Dashboard</span>
+            </a>
+          </li>
+  
+          <!-- target -->
+          <li>
+              <div class="icon-link">
+                <a href="#">
+                  <i class='bx bx-target-lock'></i>
+                  <span class="links_name">Target <i class='bx bx-chevron-right'></i></span>
+                </a>
+                <!-- <i class='bx bx-chevron-down arrow'></i> -->
+              </div>
+              <ul class="sub-target">
+                <li><a class="links_name" href="{{url_for('targetlist')}}">Target List</a></li>
+                <li><a class="links_name" href="{{url_for('Target')}}">Add Target</a></li>
+              </ul>
+          </li>
+  
+          <!--scans -->
+          <li>
+            <a href="#">
+              <i class='bx bx-scan'></i>
+              <span class="links_name">Report</span>
+            </a>
+          </li>
+  
+          <!-- account -->
+          <li>
+            <a href="#">
+              <i class='bx bx-user'></i>
+              <span class="links_name">Account</span>
+            </a>
+          </li>
+  
+          <!-- Resources -->
+          <li>
+            <a href="{{url_for('resources')}}">
+              <i class='bx bxs-cog'></i>
+              <span class="links_name">Resources</span>
+            </a>
+          </li>
+  
+          <!-- About -->
+          <li>
+            <a href="{{url_for('about')}}">
+              <i class='bx bx-info-square'></i>
+              <span class="links_name">About</span>
+            </a>
+          </li>
+  
+          <!-- Help -->
+          <li>
+            <a href="#">
+              <i class='bx bxs-help-circle'></i>
+              <span class="links_name">Help</span>
+            </a>
+          </li>
+  
+        </ul>
+  
+      </div>
+  
+      <script type="text/javascript">
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+  
+        btn.onclick = function(){
+          sidebar.classList.toggle("active");
+        }
+      </script>
+
+
+    <div class="resource">
+        <h1>Learning resources ... </h1>
+
+        <div class="resources-links">
+            <p><i class='bx bxs-label'></i>Cross site scripting : <a href="https://portswigger.net/web-security/cross-site-scripting" target="_blank">https://portswigger.net/web-security/cross-site-scripting</a></p>
+            <p><i class='bx bxs-label'></i>Cross site scripting (XSS) : <a href="https://owasp.org/www-community/attacks/xss/" target="_blank">https://owasp.org/www-community/attacks/xss/</a></p>
+            <p><i class='bx bxs-label'></i>SQL Injection : <a href="https://portswigger.net/web-security/sql-injection" target="_blank">https://portswigger.net/web-security/sql-injection</a></p>
+            <p><i class='bx bxs-label'></i>SQL Injection (OWASP) : <a href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank">https://owasp.org/www-community/attacks/SQL_Injection</a></p>
+            <p><i class='bx bxs-label'></i> How Mail Server Misconfiguration works ? : <a href="https://shahjerry33.medium.com/mail-server-misconfiguration-f42734d19678" target="_blank">Learn here</a></p>
+            <p><i class='bx bxs-label'></i> Mail Server Misconfiguration : <a href="https://blog.detectify.com/2016/06/20/misconfigured-email-servers-open-the-door-to-spoofed-emails-from-top-domains/" target="_blank">Learn more here</a></p>
+            <p><i class='bx bxs-label'></i> Clickjacking : <a href="https://owasp.org/www-community/attacks/Clickjacking" target="_blank">Learn more here</a></p>
+            <p><i class='bx bxs-label'></i>Clickjacking (UI redressing) : <a href="https://portswigger.net/web-security/clickjacking" target="_blank">Learn more here</a></p>
+
+            <p><i class='bx bxs-label'></i>What happens if SSL certificates expired or not found : <a href="https://www.acunetix.com/vulnerabilities/web/tls-ssl-certificate-about-to-expire/" target="_blank">Learn more here</a></p>
+        </div>
+    </div>
+</body>
+</html>

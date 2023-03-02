@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: black;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    display: block;
+    background-color: black;
+    margin: 15% auto;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #3A1356;
+}
+
+.inner_circle {
+    background-color: black;
+    width: 95%;
+    height: 95%;
+    margin: 2.5% auto;
+    border-radius: 50%;
+    border: 1.5px solid #9576AB;
+    transition-duration: 500ms;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-bottom-color: #423E4B;
+}
+
+
+.middle:hover {
+    background-color: #3A1356; 
+    color: white;
+    border-right-color: #423E4B;
+    border-left-color: #423E4B;
+    border-bottom-color: #9576AB;
+    font-size: 55px;
+    transition: all 0.5s ease;
+}
+
+a{
+    font-size: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+a:hover{
+    cursor: pointer;
+    font-size: 65px;
+    transition: all 0.4s ease;
+}
+

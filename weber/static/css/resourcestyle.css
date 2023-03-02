@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('action.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header{
+  position:fixed;
+  display:inline-flex;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header .logo-content{
+  display:inline-flex;
+}
+
+.header .logo-content img{
+  width: 3rem;
+  height: 3rem;
+  color: black;
+  margin: 0.7em 1em;
+  border-radius: 0.5em;
+}
+
+.header .logo-content .logo{
+  padding: 0.6em 0em;
+}
+
+.logo-content .logo .logo_name{
+  font-family: cursive;
+  font-weight:520;
+  font-size: 38px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.header .dropdown{
+  position: fixed;
+  padding-left: 80%;
+}
+
+.header .dropdown .link{
+  display: inline-flex;
+  float: right;
+  padding: 1em;
+}
+
+.header .dropdown .link li{
+  list-style: none;
+  padding: 0.5em 0 0 2em;
+}
+
+.header .dropdown .link li a{
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  text-decoration: none;  
+}
+
+.sidebar{
+  position: fixed;
+  top: 4.6em;
+  width: 240px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+
+.sidebar.active{
+  width: 68px;
+  transition: all 1s ease;
+}
+
+.sidebar #btn{
+  position: absolute;
+  color: #000;
+  left: 90%;
+  top: 6px;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform:  translateX(-50%);
+}
+
+.sidebar #btn:hover{
+  cursor: pointer;
+}
+
+.sidebar.active #btn{
+  left:55%;
+}
+
+.sidebar .nav-links{
+  height: 100%;
+  padding-top: 4.5em;
+}
+
+.sidebar .links_name{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 1s ease;
+}
+
+.sidebar .links_name.current{
+  font-weight: bold;
+}
+
+.sidebar.active .links_name{
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar .nav-links li{
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+
+.sidebar .nav-links li:hover{
+  background: rgb(234, 234, 225);
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar .nav-links li .icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .nav-links li i{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #000;
+  font-size: 20px;
+}
+
+
+.sidebar .nav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+
+.sidebar .nav-links li .sub-target{
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #1d1b31;
+  list-style: none;
+  /*  display: none; */
+}
+
+.sidebar .nav-links li .sub-target a{
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li .sub-target a:hover{
+  opacity: 1;
+  color: #000;
+  padding: 0.5em;
+}
+
+.sidebar.close .nav-links li .sub-target{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  transition: all 0.4s ease;
+  opacity:0;
+  pointer-events: none;
+}
+
+.sidebar.close .nav-links li:hover .sub-target{
+  top: 0;
+  opacity:1;
+  pointer-events: auto;
+}
+
+.sidebar .nav-links li .sub-target .link_name{
+  display: none;
+}
+
+.sidebar.close .nav-links li .sub-target .links_name{
+  font-size: 15px;
+  opacity: 1;
+  display: block;
+}
+
+.resource {
+    position: fixed;
+    left: 18em;
+    top: 6em;
+}
+
+.resource h1{
+    font-weight: lighter;
+}
+
+
+.resource .resources-links i{
+    font-size: 15px;
+    margin-right: 1em;
+    margin-left: 3em;
+    opacity: 0.6;
+}
+.resource .resources-links{
+    position: absolute;
+    height: 40em;
+    width:700%;
+    display:block;
+    overflow-y: scroll; 
+}
+
+.resource .resources-links p{
+    font-size: 18px;
+    padding: 0.5em;
+}
+

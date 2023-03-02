@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to weber</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/targetliststyle.css')}}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel = "icon" href ="{{url_for('static', filename='w3.png')}}" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="logo-content">
+        <i><img src="{{url_for('static', filename='w3.png')}}" alt="weber"></i>
+        <div class="logo">
+          <div class="logo_name">weber</div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <nav class="link">
+          <li>
+            <i class='bx bxs-user' ></i>
+            <span>{{user}}</span>
+          </li>
+          
+          <li>
+            <a href="{{url_for('logout')}}">
+              <i class='bx bx-log-out'></i>
+              <span>Log out</span>
+            </a>
+          </li>
+        </nav>
+      </div>
+
+    </div>
+
+
+    <div class="sidebar close">
+      <i class='bx bx-menu' id="btn"></i>
+      <ul class="nav-links">
+        <!-- dashboard -->
+        <li>
+          <a href="/Weber/login/dashboard">
+            <i class='bx bxs-dashboard' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+
+        <!-- target -->
+        <li>
+            <div class="icon-link">
+              <a href="#">
+                <i class='bx bx-target-lock'></i>
+                <span class="links_name">Target <i class='bx bx-chevron-right'></i></span>
+              </a>
+              <!-- <i class='bx bx-chevron-down arrow'></i> -->
+            </div>
+            <ul class="sub-target">
+              <li><a class="links_name" href="#">Target List</a></li>
+              <li><a class="links_name" href="{{url_for('Target')}}">Add Target</a></li>
+            </ul>
+        </li>
+
+        <!--scans -->
+        <li>
+          <a href="#">
+            <i class='bx bx-scan'></i>
+            <span class="links_name">Report</span>
+          </a>
+        </li>
+
+        <!-- account -->
+        <li>
+          <a href="#">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Account</span>
+          </a>
+        </li>
+
+        <!-- Resources -->
+        <li>
+          <a href="{{url_for('resources')}}">
+            <i class='bx bxs-cog'></i>
+            <span class="links_name">Resources</span>
+          </a>
+        </li>
+
+        <!-- About -->
+        <li>
+          <a href="#">
+            <i class='bx bx-info-square'></i>
+            <span class="links_name">About</span>
+          </a>
+        </li>
+
+        <!-- Help -->
+        <li>
+          <a href="#">
+            <i class='bx bxs-help-circle'></i>
+            <span class="links_name">Help</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <script type="text/javascript">
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+
+      btn.onclick = function(){
+        sidebar.classList.toggle("active");
+      }
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <ul class=flashes>
+      {% for category,message in messages %}
+        <script>
+          swal("{{category}}", "{{message}}", "success");
+        </script>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+
+  <div class="targetlist">
+    <div class="title"><p>Target list</p></div>
+    <!-- <div class="line-1"></div>
+    <div class="addr-header">Address</div>
+    <div class="desc-header">Description</div>
+    <div class="stat-header">Scan status</div>
+    <div class="scan-header">Scan Target</div>
+    <div class="line-2"></div> -->
+  </div>
+
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th>Description</th>
+        <th>Scan status</th>
+        <th>Generate Report</th>
+      </tr>
+    </thead>
+
+    <tbody>
+  
+    {%if data%}
+    {% for row in data %}
+    <tr>
+    <td>{{row[0]}}</td>
+    <td >{{row[1]}} </td>
+    <td><h4>Last scanned</h4><p>2022.12.10 10.12am</p></td>
+    <form method="post" action="/reportGenerateForDomain">
+      <input type="text" value={{row[0]}} name="url" hidden>
+      <td><input type="submit" name="report" value="Report"></td>
+    </form>
+    
+    </tr>
+        
+    {%endfor%}
+    {%else%}
+    <tr>
+    <td>No Data</td>
+    <td >No Data </td>
+    <td><h4>Last scanned</h4><p>None</p></td>
+    <td><input type="submit" name="report" value="Report"></td>
+    </tr>
+    {%endif%}
+
+    
+    </tbody>
+  </table>
+
+  
+</body>
+</html>
